@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { banner } from "../assets";
+import { banner, building, home } from "../assets";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import $ from 'jquery';
@@ -39,9 +39,8 @@ const Hero = () => {
         <div className="absolute inset-0 opacity-50"></div>
         <div id="slider" className="w-screen h-full md:h-screen relative">
           <img src={banner} alt="Banner" className="object-cover h-full w-full" />
-          <img src={banner} alt="Banner" className="object-cover h-full w-full" />
-          <img src={banner} alt="Banner" className="object-cover h-full w-full" />
-          {/* Add more images for the slider */}
+          <img src={building} alt="Banner" className="object-cover h-full w-full" />
+          <img src={home} alt="Banner" className="object-cover h-full w-full" />
         </div>
         <div className="boxWidth paddingX absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start sm:top-1/2 sm:left-1/4 sm:w-1/2 md:top-1/2 md:w-2/5 lg:w-1/3 xl:w-1/4">
           <h1 className="font-poppins font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white ss:leading-[3rem] leading-[2.5rem] text-left">
@@ -57,7 +56,6 @@ const Hero = () => {
           <button className="dot bg-yellow-400"></button>
           <button className="dot bg-white"></button>
           <button className="dot bg-white"></button>
-          {/* Add more dots for additional images */}
         </div>
       </div>
       {/* Below image */}
